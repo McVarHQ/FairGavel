@@ -1,0 +1,3 @@
+Epoch,Criterion,Reg Loss,Adv Loss,Val Loss,Test Loss
+15,Min Val Loss,0.0164,0.3219,0.0104,0.0028
+8,Val - Adv Max,0.0332,0.3135,0.0366,0.0028
