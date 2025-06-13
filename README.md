@@ -1,9 +1,9 @@
 # FairGavel: Leveraging Graph Neural Networks for Fairness-Driven Legal Judgment Prediction
 
 <p align="center">
-  <img src="./images/model pipeline.png" alt="FairGavel Pipeline" height="300">
+  <img src="./images/model pipeline.png" alt="FairGavel Pipeline" height="500">
   <br>
-  <span style="font-size: 14px; color: gray;">FairGavel Pipeline</span>
+  <span style="font-size: 14px; color: gray;"><b>FairGavel Pipeline</b></span>
 </p>
 
 ## 🔍 Overview
@@ -35,10 +35,11 @@ Key Highlights:
 
 This dataset enables **fairness-aware** training and supports both extractive and abstractive summarization tasks in addition to verdict prediction.
 
-![Word Cloud of MultiLexSum](./6.%20Word%20Cloud%20-%20Combined%20Sources.png)
-<div align="center">
-  <img src="./model_pipeline.png" alt="Word Cloud of MultiLexSum" height="300px">
-</div>
+<p align="center">
+  <img src="./images/6. Word Cloud - Combined Sources.png" alt="Word Cloud of MultiLexSum" height="300">
+  <br>
+  <span style="font-size: 14px; color: gray;"><b>Word Cloud of MultiLexSum</b></span>
+</p>
 
 ---
 
@@ -54,17 +55,19 @@ This dataset enables **fairness-aware** training and supports both extractive an
 - **Edges**: Sequential, Semantic Similarity, Entity-Sentence, Document-level, Self-loops
 - Edge-type labels enable heterogeneous GNN processing
 
-![Sample Graph](./newplot.png)
-<div align="center">
-  <img src="./model_pipeline.png" alt="FairGavel Pipeline" height="300px">
-</div>
+<p align="center">
+  <img src="./images/newplot.png" alt="Sample Graph" height="300">
+  <br>
+  <span style="font-size: 14px; color: gray;"><b>Sample Graph</b></span>
+</p>
 
 ### 4. FairGavel Model Architecture
 
-![FairGavel Architecture](./model%20architecture.png)
-<div align="center">
-  <img src="./model_pipeline.png" alt="FairGavel Pipeline" height="300px">
-</div>
+<p align="center">
+  <img src="./images/model architecture.png" alt="FairGavel Architecture" height="300">
+  <br>
+  <span style="font-size: 14px; color: gray;"><b>FairGavel Architecture</b></span>
+</p>
 
 - **Graph Encoder**: 2-layer GraphSAGE with gated attention pooling
 - **Verdict Regressor**: Predicts verdict as a continuous score ∈ [0, 1]
@@ -96,10 +99,11 @@ Smoothed training losses across epochs:
 - Adversarial Loss
 - Validation Loss
 
-![Loss Graph](./1.%20All%20Losses%20with%20Zoom.png)
-<div align="center">
-  <img src="./model_pipeline.png" alt="FairGavel Pipeline" height="300px">
-</div>
+<p align="center">
+  <img src="./images/1. All Losses with Zoom.png" alt="Loss Graph" height="300">
+  <br>
+  <span style="font-size: 14px; color: gray;"><b>Loss Graph</b></span>
+</p>
 
 Highlights:
 - Best validation epoch: 15  
