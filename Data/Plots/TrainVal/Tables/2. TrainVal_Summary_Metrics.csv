@@ -1,0 +1,10 @@
+Metric,Value
+Final Total Loss,0.1487
+Final Reg Loss,0.0083
+Final Adv Loss,0.6637
+Final Val Loss,0.0126
+Best Val Loss,0.0104
+Epoch of Best Val Loss,15.0
+Epoch of Best Balance (Val - Adv),8.0
+Reg Loss Std Dev,0.012359486235276934
+Adv Loss Std Dev,0.10822408049967437
