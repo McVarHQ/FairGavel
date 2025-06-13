@@ -1,6 +1,6 @@
 # FairGavel: Leveraging Graph Neural Networks for Fairness-Driven Legal Judgment Prediction
 
-![FairGavel Pipeline](./model%20pipeline.png)
+![FairGavel Pipeline](./images/model%20pipeline.png)
 
 ## 🔍 Overview
 
