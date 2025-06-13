@@ -1,6 +1,6 @@
 # FairGavel: Leveraging Graph Neural Networks for Fairness-Driven Legal Judgment Prediction
 
-![FairGavel Pipeline](./model pipeline.png)
+![FairGavel Pipeline](./model%20pipeline.png)
 
 ## 🔍 Overview
 
@@ -20,21 +20,38 @@ This system illustrates how **explainability**, **fairness**, and **high perform
 
 ## ⚙️ Core Components
 
-### 1. Summarization & Preprocessing
+### 1. MultiLexSum Dataset
+
+The **MultiLexSum** dataset is a large-scale, multilingual legal corpus collected from Indian court cases. It includes full-length legal documents, summaries, and metadata such as region, language, court level, and protected attributes.
+
+Key Highlights:
+- Over 100K annotated legal cases
+- Multiple languages (English, Hindi, etc.)
+- Includes **verdict labels**, **summaries**, and **sensitive attributes**
+
+This dataset enables **fairness-aware** training and supports both extractive and abstractive summarization tasks in addition to verdict prediction.
+
+![Word Cloud of MultiLexSum](./6.%20Word%20Cloud%20-%20Combined%20Sources.png)
+
+---
+
+### 2. Summarization & Preprocessing
 
 - Multilingual tokenization and cleaning
 - Optional summarization (long, short, tiny)
 - Sensitive attribute identification (e.g., pronouns, key terms)
 
-### 2. Graph Construction
+### 3. Graph Construction
 
 - **Nodes**: Sentences, Entities (Plaintiff/Defendant)
 - **Edges**: Sequential, Semantic Similarity, Entity-Sentence, Document-level, Self-loops
 - Edge-type labels enable heterogeneous GNN processing
 
-### 3. FairGavel Model Architecture
+![Sample Graph](./newplot.png)
 
-![FairGavel Architecture](./model architecture.png)
+### 4. FairGavel Model Architecture
+
+![FairGavel Architecture](./model%20architecture.png)
 
 - **Graph Encoder**: 2-layer GraphSAGE with gated attention pooling
 - **Verdict Regressor**: Predicts verdict as a continuous score ∈ [0, 1]
@@ -66,7 +83,7 @@ Smoothed training losses across epochs:
 - Adversarial Loss
 - Validation Loss
 
-![Loss Graph](./1. All Losses with Zoom.png)
+![Loss Graph](./1.%20All%20Losses%20with%20Zoom.png)
 
 Highlights:
 - Best validation epoch: 15  
