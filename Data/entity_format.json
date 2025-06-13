@@ -1,0 +1,90 @@
+{
+  "Default": "N/A",
+  "entity_type": {
+	"type": "string",
+	"values": ["Person", "Organization"]
+  },
+  "Common_Attributes": {
+	"language": {
+	  "type": "string",
+	  "values": ["English", "Non-English"]
+	},
+	"nationality": {
+	  "type": "string",
+	  "values": ["American", "Non-American"]
+	},
+	"urbanicity": {
+	  "type": "string",
+	  "values": ["Urban", "Rural"]
+	},
+	"govt_private_status": {
+	  "type": "string",
+	  "values": ["Government", "Private"]
+	}
+  },
+  "Individual_Specific_Attributes": {
+	"gender": {
+	  "type": "string",
+	  "values": ["Male", "Female", "LGBTQ"]
+	},
+	"race": {
+	  "type": "string",
+	  "values": ["White", "Black", "Asian", "Hispanic", "Other"]
+	},
+	"religion": {
+	  "type": "string",
+	  "values": ["Christian", "Muslim", "Jewish", "Hindu", "Other"]
+	},
+	"age": {
+	  "type": "integer"
+	},
+	"disability_status": {
+	  "type": "string",
+	  "values": ["Yes", "No"]
+	},
+	"marital_status": {
+	  "type": "string",
+	  "values": ["Single", "Married", "Divorced"]
+	},
+	"education_level": {
+	  "type": "string",
+	  "values": ["High School", "Bachelor's", "Master's", "Doctorate"]
+	},
+	"occupation": {
+	  "type": "string",
+	  "values": ["Student", "Professional", "Retired", "Unemployed"]
+	},
+	"citizenship_status": {
+	  "type": "string",
+	  "values": ["Citizen", "Non-Citizen"]
+	}
+  },
+  "Organization_Specific_Attributes": {
+	"company_size": {
+	  "type": "string",
+	  "values": ["Small", "Medium", "Large"]
+	},
+	"net_worth": {
+	  "type": "float"
+	},
+	"years_in_operation": {
+	  "type": "integer"
+	},
+	"ownership_structure": {
+	  "type": "string",
+	  "values": ["Public", "Private", "Non-Profit"]
+	},
+	"stock_listing_status": {
+	  "type": "categorical",
+	  "values": ["Listed", "Not Listed"]
+	},
+	"parent_company": {
+	  "type": "string",
+	  "description": "Parent Company Name (if no parent company, then entity_name)"
+	},
+	"geographic_reach": {
+	  "type": "string",
+	  "values": ["Local", "National", "International"]
+	}
+  }
+}
