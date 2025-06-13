@@ -1,8 +1,9 @@
 # FairGavel: Leveraging Graph Neural Networks for Fairness-Driven Legal Judgment Prediction
 
-<div align="center">
-  <img src="./images/model pipeline.png" alt="FairGavel Pipeline" height="500px">
-</div>
+<figure style="text-align: center;">
+  <img src="./images/model pipeline.png" alt="FairGavel Pipeline" height="300px">
+  <figcaption style="font-size: 14px; color: gray;">FairGavel Pipeline</figcaption>
+</figure>
 
 ## 🔍 Overview
 
@@ -34,6 +35,9 @@ Key Highlights:
 This dataset enables **fairness-aware** training and supports both extractive and abstractive summarization tasks in addition to verdict prediction.
 
 ![Word Cloud of MultiLexSum](./6.%20Word%20Cloud%20-%20Combined%20Sources.png)
+<div align="center">
+  <img src="./model_pipeline.png" alt="Word Cloud of MultiLexSum" height="300px">
+</div>
 
 ---
 
@@ -50,10 +54,16 @@ This dataset enables **fairness-aware** training and supports both extractive an
 - Edge-type labels enable heterogeneous GNN processing
 
 ![Sample Graph](./newplot.png)
+<div align="center">
+  <img src="./model_pipeline.png" alt="FairGavel Pipeline" height="300px">
+</div>
 
 ### 4. FairGavel Model Architecture
 
 ![FairGavel Architecture](./model%20architecture.png)
+<div align="center">
+  <img src="./model_pipeline.png" alt="FairGavel Pipeline" height="300px">
+</div>
 
 - **Graph Encoder**: 2-layer GraphSAGE with gated attention pooling
 - **Verdict Regressor**: Predicts verdict as a continuous score ∈ [0, 1]
@@ -86,6 +96,9 @@ Smoothed training losses across epochs:
 - Validation Loss
 
 ![Loss Graph](./1.%20All%20Losses%20with%20Zoom.png)
+<div align="center">
+  <img src="./model_pipeline.png" alt="FairGavel Pipeline" height="300px">
+</div>
 
 Highlights:
 - Best validation epoch: 15  
