@@ -128,11 +128,14 @@ FairGavel achieves **state-of-the-art fairness** without sacrificing predictive 
 ---
 
 ## 📂 Repository Structure
-fairgavel/
+
+```
+📂 Project Root
 │
-├── Codes/ # Project Codes
-├── Data/ # Accessories and Intermediaries
-├── Docs/ # Documentation
-├── images/ # Diagrams and results for README
-├── requirements.txt # Dependencies
-└── README.md # You're here!
+├── 📁 Codes/ # Project Codes
+├── 📁 Data/ # Accessories and Intermediaries  
+├── 📁 Docs/ # Documentation
+├── 📁 images/ # Diagrams and results for README
+├── 📄 requirements.txt # Dependencies
+└── 📄 README.md # You're here!
+```
